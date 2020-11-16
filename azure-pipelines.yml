@@ -19,3 +19,10 @@ steps:
     command: 'build'
     arguments: '--configuration $(buildConfiguration)'
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    appType: 'webApp'
+    WebAppName: 'netnandangularnotcontainer'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
