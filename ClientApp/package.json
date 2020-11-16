@@ -56,7 +56,7 @@
     "tslint": "~5.20.0"
   },
   "resolutions": {
-    "@babel/preset-env": "7.5.5" 
+    "@babel/preset-env": "7.8.7" 
 
   }
 }
