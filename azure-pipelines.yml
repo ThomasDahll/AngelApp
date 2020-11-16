@@ -32,6 +32,7 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
+- task: PublishBuildArtifacts@1
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Free Trial(1)(02c75993-e559-4034-bf85-24e986a9b340)'
