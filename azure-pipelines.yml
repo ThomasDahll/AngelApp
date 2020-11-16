@@ -9,6 +9,15 @@ variables:
 
 
 steps:
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'ClientApp'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: 'ClientApp'
+    customCommand: 'run build'
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
@@ -18,7 +27,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
