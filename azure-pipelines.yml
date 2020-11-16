@@ -37,7 +37,7 @@ steps:
     azureSubscription: 'Free Trial(1)(02c75993-e559-4034-bf85-24e986a9b340)'
     appType: 'webApp'
     appName: 'netnandangularnotcontainer'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     deploymentMethod: 'auto'
 
 - task: PublishBuildArtifacts@1
