@@ -32,9 +32,9 @@ namespace AngelApp
                 configuration.RootPath = "ClientApp/dist";
             });
 
-           services.AddDbContext<PokemonDbContext>(options => {
-               options.UseNpgsql(Configuration.GetConnectionString("PokemonsPostgresConnectionString"));
-           });
+          // services.AddDbContext<PokemonDbContext>(options => {
+          //     options.UseNpgsql(Configuration.GetConnectionString("PokemonsPostgresConnectionString"));
+          // });
 
             //            services.AddDbContext<PokemonDbContext>(options => {
             //              options.UseSqlite(Configuration.GetConnectionString("PokemonsSqliteConnectionString"));
