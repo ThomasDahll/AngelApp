@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngelApp", "AngelApp.csproj", "{70DD12B1-F837-403D-97F6-07DFBD5B089A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngelApp", "AngelApp.csproj", "{70DD12B1-F837-403D-97F6-07DFBD5B089A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02690C43-5D76-4D33-B90C-6197F8A2F19A}"
+	ProjectSection(SolutionItems) = preProject
+		web.config = web.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
