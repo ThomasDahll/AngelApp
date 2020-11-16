@@ -1,9 +1,3 @@
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    appType: 'webApp'
-    WebAppName: 'netnandangularnotcontainer'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
