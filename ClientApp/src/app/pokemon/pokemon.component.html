@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Pokemons</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!pokemons"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="pokemons">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type I</th>
+      <th>Type II</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pokemon of pokemons">
+      <td>{{ pokemon.name }}</td>
+      <td>{{ pokemon.type1 }}</td>
+      <td>{{ pokemon.type2 }}</td>
+    </tr>
+  </tbody>
+</table>
