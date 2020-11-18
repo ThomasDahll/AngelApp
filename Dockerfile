@@ -9,9 +9,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 44
-RUN sudo apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN sudo apt-get update && apt-get install -y nodejs
+RUN apt-get update && apt-get install -y nodejs
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
