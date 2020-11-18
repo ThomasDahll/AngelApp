@@ -10,6 +10,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 44
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+RUN apt-get update; apt-get install curl
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install -y nodejs
 
